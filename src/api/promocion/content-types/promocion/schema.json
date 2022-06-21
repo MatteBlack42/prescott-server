@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promocions",
+  "info": {
+    "singularName": "promocion",
+    "pluralName": "promocions",
+    "displayName": "Promocion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Descuento": {
+      "type": "integer",
+      "required": true,
+      "default": 10,
+      "max": 100,
+      "min": 1
+    },
+    "Descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "Descuento_En": {
+      "type": "string",
+      "required": false,
+      "default": "En ..."
+    },
+    "Condiciones": {
+      "type": "string"
+    },
+    "Imagen_Principal": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Logo_png": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria.categoria",
+      "inversedBy": "promociones"
+    }
+  }
+}
