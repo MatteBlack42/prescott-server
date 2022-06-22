@@ -4,7 +4,8 @@
   "info": {
     "singularName": "promocion",
     "pluralName": "promocions",
-    "displayName": "Promocion"
+    "displayName": "Promocion",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,26 +36,34 @@
       "type": "string"
     },
     "Imagen_Principal": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "Logo_png": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "categoria": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::categoria.categoria",
       "inversedBy": "promociones"
+    },
+    "Color_Logo": {
+      "type": "enumeration",
+      "enum": [
+        "Azul",
+        "Blanco"
+      ],
+      "default": "Blanco"
     }
   }
 }
