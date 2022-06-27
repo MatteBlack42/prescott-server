@@ -64,6 +64,10 @@
         "Blanco"
       ],
       "default": "Blanco"
+    },
+    "Hasta": {
+      "type": "string",
+      "default": "Hasta"
     }
   }
 }
