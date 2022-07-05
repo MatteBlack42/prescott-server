@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ex_alumnos",
+  "info": {
+    "singularName": "ex-alumno",
+    "pluralName": "ex-alumnos",
+    "displayName": "Ex_Alumno"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombres": {
+      "type": "string",
+      "required": true
+    },
+    "Apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "DNI": {
+      "type": "string",
+      "required": true,
+      "maxLength": 9
+    },
+    "Celular": {
+      "type": "string",
+      "maxLength": 9,
+      "required": true
+    },
+    "Direccion": {
+      "type": "string"
+    },
+    "Correo": {
+      "type": "email",
+      "required": true
+    },
+    "Estudios": {
+      "type": "string"
+    },
+    "Ocupacion": {
+      "type": "string"
+    },
+    "Lugar_de_Trabajo": {
+      "type": "string"
+    }
+  }
+}
