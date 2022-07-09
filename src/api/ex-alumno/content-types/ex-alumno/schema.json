@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ex-alumno",
     "pluralName": "ex-alumnos",
-    "displayName": "Ex_Alumno"
+    "displayName": "Ex_Alumno",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -44,6 +45,17 @@
     },
     "Lugar_de_Trabajo": {
       "type": "string"
+    },
+    "Promocion": {
+      "type": "string"
+    },
+    "Aprobado": {
+      "type": "boolean",
+      "default": false
+    },
+    "Bloqueado": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
