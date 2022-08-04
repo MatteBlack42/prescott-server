@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nombre_promocions",
+  "info": {
+    "singularName": "nombre-promocion",
+    "pluralName": "nombre-promocions",
+    "displayName": "Nombre_promocion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Anio": {
+      "type": "uid",
+      "required": true
+    },
+    "Nombre": {
+      "type": "string"
+    }
+  }
+}
