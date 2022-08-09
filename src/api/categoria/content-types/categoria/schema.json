@@ -23,12 +23,16 @@
       "mappedBy": "categoria"
     },
     "Icono": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Orden": {
+      "type": "integer",
+      "default": 1
     }
   }
 }
