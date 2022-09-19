@@ -27,7 +27,6 @@
     },
     "Celular": {
       "type": "string",
-      "maxLength": 9,
       "required": true
     },
     "Direccion": {
