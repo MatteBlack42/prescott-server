@@ -3,7 +3,7 @@
 // server.js content:
 
 // const strapi = require("strapi");
-
+//Build
 // strapi(/* {...} */).start();
 const strapi = require("strapi");
 
